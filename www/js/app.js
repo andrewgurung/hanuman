@@ -9,9 +9,35 @@ angular.module('App', ['ionic'])
   $stateProvider
     .state('tabs', {
       url: '/tabs',
+      abstract: true,
       templateUrl: 'views/tabs/tabs.html'
-    });
-  $urlRouterProvider.otherwise('/tabs');
+    })
+    .state('tabs.profile', {
+      url: '/profile',
+      views: {
+        'profile-tab': {
+          templateUrl: 'views/profile/profile.html'
+        }
+      }
+    })
+    .state('tabs.workout', {
+      url: '/workout',
+      views: {
+        'workout-tab': {
+          templateUrl: 'views/workout/workout.html'
+        }
+      }
+    })
+    .state('tabs.history', {
+      url: '/history',
+      views: {
+        'history-tab': {
+          templateUrl: 'views/history/history.html'
+        }
+      }
+    })
+    ;
+  $urlRouterProvider.otherwise('/tabs/profile');
 })
 
 .run(function($ionicPlatform) {
