@@ -36,8 +36,11 @@ angular.module('App', ['ionic'])
         }
       }
     })
-    ;
-  $urlRouterProvider.otherwise('/tabs/profile');
+    .state('tour', {
+      url: '/tour',
+      templateUrl: 'views/tour/tour.html'
+    });
+  $urlRouterProvider.otherwise('/tour');
 })
 
 .run(function($ionicPlatform) {
