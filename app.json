@@ -1,0 +1,7 @@
+{
+  "name": "Hanuman App",
+  "description": "Strength training app using Ionic Framework",
+  "repository": "https://github.com/andrewgurung/hanuman",
+  "logo": "http://ionicframework.com/img/ionic-logo-blog.png",
+  "keywords": ["ionic", "hanuman", "strength", "workout", "log"]
+}
