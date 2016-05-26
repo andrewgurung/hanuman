@@ -28,6 +28,14 @@ angular.module('App', ['ionic'])
         }
       }
     })
+    .state('tabs.exercise', {
+      url:'/exercise',
+      views: {
+        'workout-tab': {
+          templateUrl: 'views/exercise/exercise.html'
+        }
+      }
+    })
     .state('tabs.history', {
       url: '/history',
       views: {
